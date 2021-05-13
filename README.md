@@ -1,2 +1,2 @@
-# stos-website
-HTML Website for STOS ENT
+# main-website
+Website host
