@@ -43,6 +43,53 @@
             background: none !important;
             padding: 0 !important;
         }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 999999;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 3% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
     <link rel="stylesheet" id="wp-block-library-css" href="assets/style.css" type="text/css" media="all">
     <link rel="stylesheet" id="divi-fonts-css" href="assets/css_002.css" type="text/css" media="all">
@@ -440,12 +487,14 @@
                                                     <ul id="menu-mainmenu" class="et-menu nav downwards">
                                                         <li
                                                             class="et_pb_menu_page_id-home menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-25969">
-                                                            <a href="./">Home</a></li>
+                                                            <a href="./">Home</a>
+                                                        </li>
                                                         <li
                                                             class="et_pb_menu_page_id-25818 menu-item menu-item-type-custom menu-item-object-custom menu-item-25818">
                                                             <a target="_blank" rel="noopener"
                                                                 href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9eab0a93b0cd5d904493694f041bdcedb97b88c6">Buy
-                                                                STOS</a></li>
+                                                                STOS</a>
+                                                        </li>
                                                         <li
                                                             class="et_pb_menu_page_id-26038 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-26038 current_page_item menu-item-26102">
                                                             <a href="./tokenomics" aria-current="page">Ticket NFT's</a>
@@ -458,8 +507,8 @@
                                                         </li>
                                                         <li
                                                             class="et_pb_menu_page_id-25820 menu-item menu-item-type-custom menu-item-object-custom menu-item-25820">
-                                                            <a target="_blank" rel="noopener"
-                                                                href="https://app.vlad.finance/pools">Earn</a></li>
+                                                            <a href="#" onclick="false">Earn Safestos (Coming Soon)</a>
+                                                        </li>
                                                     </ul>
                                                 </nav>
                                             </div>
@@ -469,12 +518,14 @@
                                                     <ul id="mobile_menu1" class="et_mobile_menu">
                                                         <li
                                                             class="et_pb_menu_page_id-home menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-25969 et_first_mobile_item">
-                                                            <a href="./">Home</a></li>
+                                                            <a href="./">Home</a>
+                                                        </li>
                                                         <li
                                                             class="et_pb_menu_page_id-25818 menu-item menu-item-type-custom menu-item-object-custom menu-item-25818">
                                                             <a target="_blank" rel="noopener"
                                                                 href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9eab0a93b0cd5d904493694f041bdcedb97b88c6">Buy
-                                                                STOS</a></li>
+                                                                STOS</a>
+                                                        </li>
                                                         <li
                                                             class="et_pb_menu_page_id-26038 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-26038 current_page_item menu-item-26102 et-show-dropdown et-hover">
                                                             <a href="./tokenomics" aria-current="page">Ticket NFT's</a>
@@ -487,8 +538,8 @@
                                                         </li>
                                                         <li
                                                             class="et_pb_menu_page_id-25820 menu-item menu-item-type-custom menu-item-object-custom menu-item-25820">
-                                                            <a target="_blank" rel="noopener"
-                                                                href="https://app.vlad.finance/pools">Earn</a></li>
+                                                            <a href="#" onclick="false">Earn Safestos (Coming Soon)</a>
+                                                        </li>
                                                     </ul>
                                                 </a>
                                             </div>
@@ -567,12 +618,14 @@
                                                     <ul id="menu-mainmenu-1" class="et-menu nav">
                                                         <li
                                                             class="et_pb_menu_page_id-home menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-25969">
-                                                            <a href="./">Home</a></li>
+                                                            <a href="./">Home</a>
+                                                        </li>
                                                         <li
                                                             class="et_pb_menu_page_id-25818 menu-item menu-item-type-custom menu-item-object-custom menu-item-25818">
                                                             <a target="_blank" rel="noopener"
                                                                 href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9eab0a93b0cd5d904493694f041bdcedb97b88c6">Buy
-                                                                STOS</a></li>
+                                                                STOS</a>
+                                                        </li>
                                                         <li
                                                             class="et_pb_menu_page_id-26038 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-26038 current_page_item menu-item-26102">
                                                             <a href="./tokenomics" aria-current="page">Ticket NFT's</a>
@@ -585,8 +638,8 @@
                                                         </li>
                                                         <li
                                                             class="et_pb_menu_page_id-25820 menu-item menu-item-type-custom menu-item-object-custom menu-item-25820">
-                                                            <a target="_blank" rel="noopener"
-                                                                href="https://app.vlad.finance/pools">Earn</a></li>
+                                                            <a href="#" onclick="false">Earn Safestos (Coming Soon)</a>
+                                                        </li>
                                                     </ul>
                                                 </nav>
                                             </div>
@@ -596,12 +649,14 @@
                                                     <ul id="mobile_menu2" class="et_mobile_menu">
                                                         <li
                                                             class="et_pb_menu_page_id-home menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-25969 et_first_mobile_item">
-                                                            <a href="./">Home</a></li>
+                                                            <a href="./">Home</a>
+                                                        </li>
                                                         <li
                                                             class="et_pb_menu_page_id-25818 menu-item menu-item-type-custom menu-item-object-custom menu-item-25818">
                                                             <a target="_blank" rel="noopener"
                                                                 href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9eab0a93b0cd5d904493694f041bdcedb97b88c6">Buy
-                                                                STOS</a></li>
+                                                                STOS</a>
+                                                        </li>
                                                         <li
                                                             class="et_pb_menu_page_id-26038 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-26038 current_page_item menu-item-26102">
                                                             <a href="./tokenomics" aria-current="page">Ticket NFT's</a>
@@ -614,8 +669,8 @@
                                                         </li>
                                                         <li
                                                             class="et_pb_menu_page_id-25820 menu-item menu-item-type-custom menu-item-object-custom menu-item-25820">
-                                                            <a target="_blank" rel="noopener"
-                                                                href="https://app.vlad.finance/pools">Earn</a></li>
+                                                            <a href="#" onclick="false">Earn Safestos (Coming Soon)</a>
+                                                        </li>
                                                     </ul>
                                                 </a>
                                             </div>
@@ -646,6 +701,61 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="et_pb_section et_pb_section_1 et_section_regular">
+                                        <div class="et_pb_row et_pb_row_1 et_pb_row_4col">
+                                            <div
+                                                class="et_pb_column et_pb_column_1_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough">
+                                                <div
+                                                    class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+                                                    <div class="et_pb_blurb_content"
+                                                        onclick="display_modal('Main_pass_NFT')">
+                                                        <div class="et_pb_blurb_container">
+                                                            <img src="assets/preview1.png" width="320" />
+                                                            <h3 class="et_pb_module_header"><span>Main Pass NFT</span></h3>
+                                                            <div class="et_pb_blurb_description">
+                                                                <p>Description: Dummy Text</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="et_pb_column et_pb_column_1_3 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
+                                                <div
+                                                    class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+                                                    <div class="et_pb_blurb_content" onclick="display_modal('Yacht_pass_NFT')">
+                                                        <div class="et_pb_blurb_container">
+                                                            <img src="assets/preview2.png" width="320" />
+
+                                                            <h3 class="et_pb_module_header"><span>Yacht Pass NFT</span></h3>
+                                                            <div class="et_pb_blurb_description">
+                                                                <p>Description: Dummy Text</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
+                                                <div
+                                                    class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
+                                                    <div class="et_pb_blurb_content" onclick="display_modal('VIPWEEK_pass_NFT')">
+                                                        <div class="et_pb_blurb_container">
+                                                            <img src="assets/preview3.png" width="320" />
+
+                                                            <h3 class="et_pb_module_header"><span>VIP WEEK Pass NFT</span></h3>
+                                                            <div class="et_pb_blurb_description">
+                                                                <p>Description: Dummy Text</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h1 style="text-align: center;font-weight: 600;font-size: 50px;">Tokenomics</h1>
+
                                     <div class="et_pb_section et_pb_section_1 et_section_regular">
                                         <div class="et_pb_row et_pb_row_1 et_pb_row_4col">
                                             <div
@@ -755,7 +865,7 @@
                                                             <p>Ensure access to STOS events</p>
                                                         </div>
                                                         <a class="et_pb_button et_pb_more_button et_pb_button_one"
-                                                            href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9eab0a93b0cd5d904493694f041bdcedb97b88c6">Buy
+                                                            href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9eab0a93b0cd5d904493694f041bdcedb97b88c6" style="background-color: #273b49;!important">Buy
                                                             STOS</a>
                                                     </div>
                                                 </div>
@@ -789,12 +899,49 @@
             </div>
         </div>
     </div>
+
+
+    <div id="Main_pass_NFT" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video width="100%" autoplay loop muted>
+                <source src="https://ipfs.io/ipfs/QmPyscx78BvRRJ9uLsEkWgB69Ut75KXcXL37YZ8rJAjvMV?filename=Main_pass_NFT.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id="Yacht_pass_NFT" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video width="100%" autoplay loop muted>
+                <source src="https://ipfs.io/ipfs/QmV6f2sF7BEpjMf4LmUr7V2777pdTZpx63wYvq1EkVJF6N?filename=Yacht_pass_NFT.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id="VIPWEEK_pass_NFT" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video width="100%" autoplay loop muted>
+                <source src="https://ipfs.io/ipfs/QmTLsGbZ2REx2gkv9GCR2ENNaHg66dkAxJXJBDw5sb6eJw?filename=VIPWEEK_pass_NFT.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
     <script type="text/javascript">
         var et_animation_data = [{ "class": "et_pb_text_0", "style": "fade", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }];
     </script>
     <script type="text/javascript" src="assets/coblocks-animation.js" id="coblocks-animation-js"></script>
     <script type="text/javascript" src="assets/common.js" id="et-core-common-js"></script>
     <script type="text/javascript" src="assets/wp-embed.js" id="wp-embed-js"></script>
+    <script type="text/javascript" src="assets/modal.js"></script>
 
 </body>
 
