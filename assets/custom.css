@@ -23,6 +23,12 @@
     background-color: #111;
     color: white;
     font-size: 25px;
+    font-weight: 600;
+}
+
+.nft-ul .token {
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .nft-ul .footer {
@@ -30,7 +36,13 @@
 }
 
 .nft-ul .event {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nft-ul .included {
     font-size: 16px;
+    font-weight: 800;
 }
 
 .nft-ul li {
@@ -39,3 +51,22 @@
     min-height: 30px;
     border-bottom: 1px solid #eee;
 }
+
+.conditions {
+    font-size: 12px;
+    line-height: 0.5;
+    padding-top: 0px;
+}
+
+
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+    .conditions {
+        line-height: 1;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+  }
