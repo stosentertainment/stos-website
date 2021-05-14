@@ -13,3 +13,29 @@
     color: white;
     border-radius: 25px!important;
 }
+
+.nft-ul {
+    list-style-type: none!important;
+    padding: 0px!important;
+}
+
+.nft-ul .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.nft-ul .footer {
+    font-size: 10px;
+}
+
+.nft-ul .event {
+    font-size: 16px;
+}
+
+.nft-ul li {
+    padding: 5px 25px;
+    margin: 0 -13px;
+    min-height: 30px;
+    border-bottom: 1px solid #eee;
+}
