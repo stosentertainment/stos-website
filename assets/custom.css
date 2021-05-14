@@ -58,6 +58,9 @@
     padding-top: 0px;
 }
 
+.click-here:hover {
+    color: #1067a1 !important;;
+}
 
 
 /* If the screen size is 600px wide or less, hide the element */
