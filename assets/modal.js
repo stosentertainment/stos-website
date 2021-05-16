@@ -21,3 +21,21 @@ function display_modal(modalID) {
         }
     }
 }
+
+function display_map(modalID) {
+    var modal = document.getElementById(modalID);
+
+    var specific_span = document.getElementsByClassName(modalID+"_close")[0];
+
+    modal.style.display = "block";
+
+    specific_span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
