@@ -66,6 +66,15 @@
   color: #0095b2;
 }
 
+.hero-section-text {
+    position: absolute;
+    top: 140px;
+    background: transparent;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
 /* If the screen size is 600px wide or less, hide the element */
 @media only screen and (max-width: 600px) {
     .conditions {
@@ -79,5 +88,19 @@
     .social-media {
         display: none!important;
     }
-}
 
+    .hero-section-text {
+        top: 50px;
+    }
+
+    .hero-section-video {
+        max-width: unset;
+    }
+
+    .hero-section {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
