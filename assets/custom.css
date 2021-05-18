@@ -75,6 +75,10 @@
     padding: 20px;
 }
 
+.hero-section-video {
+    width: 100%;
+}
+
 /* If the screen size is 600px wide or less, hide the element */
 @media only screen and (max-width: 600px) {
     .conditions {
@@ -102,5 +106,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .hero-section-video {
+        width: auto;
     }
 }
